@@ -19,7 +19,7 @@ class AddTodo extends Component {
   handleChange = (event) => {
     this.setState({
       content: event.target.value,
-      date: Date().toDateString('en-US')
+      date: Date().toString('en-US')
     });
   };
   handleDueDate = (event) => {
