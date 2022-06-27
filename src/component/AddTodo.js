@@ -58,10 +58,11 @@ class AddTodo extends Component {
           onChange={this.handleChange}
           value={this.state.content}
           onSubmit = {this.due}
+          data-testid = "new-item-input"
         />
         <LocalizationProvider dateAdapter={AdapterDateFns}>         
   <DesktopDatePicker
-       id="new-item-date"
+       data-testid="new-item-date"
        label="Due Date"
        value={this.state.due}
        onChange={this.handleDueDate}
@@ -73,6 +74,7 @@ class AddTodo extends Component {
           onClick={this.handleSubmit}
           variant="contained"
           color="primary"
+          data-testid = "new-item-button"
         >
           Add
         </Button>
